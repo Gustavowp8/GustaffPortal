@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.perfil img{
+   width: 70px; 
+}
+
+.perfil{
+    background: #1f2633;
+    display: flex;
+    align-items: center;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 10px;
+    border-radius: 15px;
+    color: #ffffff;
+}
+
+.perfil div{
+    margin-left: 10px;
+}
+
+.perfil h2{
+    margin-top: -10px;
+}
+
+.eEu{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #1f2633;
+}
+
+.tTitulo{
+    text-align: center;
+}
+
+.areaSocial{
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.areaSocial a{
+    background: #1f2633;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.areaappN{
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.areaappN a{
+    background: #1f2633;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
