@@ -4,12 +4,11 @@ body{
     font-family: "Roboto", sans-serif;
     margin: 0px;
     padding: 0px;
+    /*background: linear-gradient(to bottom, #add8e6, #e0f7fa);*/
 }
 
 .perfil{
     text-align: center;
-
-    background: #5f7adb;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
@@ -19,6 +18,14 @@ body{
     max-width: 200px;
     border: 5px solid black;
     border-radius: 100%;
+}
+
+.perfil h3{
+    margin-bottom: -5px;
+}
+
+.perfil h1{
+    margin-bottom: -10px;
 }
 
 .eEu{
@@ -61,6 +68,24 @@ body{
     padding: 5px;
     border-radius: 10px;
 }
+
+#cWhats{
+    background: black;
+    align-items: center;
+    max-width: 200px;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#cWhats a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
 
 /* Estilo autoplay */ 
 
