@@ -7,6 +7,11 @@ body{
     /*background: linear-gradient(to bottom, #add8e6, #e0f7fa);*/
 }
 
+.tela{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
 .perfil{
     text-align: center;
     padding: 10px;
@@ -16,7 +21,7 @@ body{
 
 .perfil img{
     max-width: 200px;
-    border: 5px solid black;
+    border: 5px solid #1f2633;
     border-radius: 100%;
 }
 
@@ -70,7 +75,7 @@ body{
 }
 
 #cWhats{
-    background: black;
+    background: #1f2633;
     align-items: center;
     max-width: 200px;
     border-radius: 20px;
@@ -85,7 +90,34 @@ body{
     color: #ffffff;
 }
 
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1490px;
+    margin: 0 auto;
+}
 
+.flex > div{
+    flex: 1 1 200px;
+    margin: 10px;
+    background: #1f2633;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.flex img{
+    width: 50px;
+}
+
+.flex a{
+    background: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1f2633;
+}
 
 /* Estilo autoplay */ 
 
