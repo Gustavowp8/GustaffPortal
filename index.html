@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Gustaff</title>
 </head>
 <body>
     
 
+     <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <img src="img/capa01.png" alt="capa"> </div>
+      <div class="swiper-slide"> <img src="img/capa02.png" alt="capa"> </div>
+      <div class="swiper-slide"> <img src="img/capa03.png" alt="capa"> </div>
+    </div>
+    <!-- 
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    -->
+  </div><hr> <br>
+
     <div class="perfil">
-        <div>
-            <img src="img/perfil.png" alt="">
-        </div>
+        <img src="img/perfil.png" alt="perfil">
 
         <div>
-            <p id="mensagem">Carregando...</p>
-            <h2>Eu sou o Gustavo</h2>
+
+            <h3 id="mensagem">Carregando...</h3>
+            <h1>Eu sou o Gustavo o Gustaff</h1>
+            <p>Programador WEB</p>
         </div>
+
     </div>
 
     <div class="eEu">
-        <h3>Quem sou eu?</h3>
+        <h3>O que eu faço ?</h3>
         <p>
             Sou o criador e proprietário do site Gustaff, 
             um espaço onde você pode conhecer de perto o meu 
@@ -34,40 +50,10 @@
 
     </div> <hr>
 
-   
-    <div>
-
-        <h1 class="tTitulo">Redes sociais</h1> <br>
-
-        <div class="areaSocial">
-            <a href="https://wa.me/556135752752?text=Ol%C3%A1%2C%20Gustaff%20eu%20quero%20saber%20mais%20sobre%2C%20">WhatsApp</a>
-
-        <a href="https://www.instagram.com/gustaffdev/">Instagram</a>
-
-        <a href="https://www.youtube.com/@gustaffDev">YouTube</a>
-        </div>
-
-    </div> <hr>
-
-    <div class="areaapp">
-
-        <h1 class="tTitulo">Aplicativos Web</h1> <br>
-
-    <div class="areaappN">
-        <a href="http://gustavowp10-002-site1.qtempurl.com/Account/Login?ReturnUrl=%2F">Gustaff Despesas</a>
-    </div>
-
-    </div>  <hr> <br>
-    
-    <div>
-        <h1 class="tTitulo">Este site esta em construção, em breve vamos ter mais novidades</h1> 
-    </div>
-   
-
-
-
 </body>
 </html> 
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
     function obterSaudacao() {
@@ -76,13 +62,13 @@
         let emoji = "";
 
         if (hora >= 5 && hora < 12) {
-            mensagem = "Bom dia";
+            mensagem = "Ola, Bom dia!";
             emoji = "☀️";
         } else if (hora >= 12 && hora < 18) {
-            mensagem = "Boa tarde";
+            mensagem = "Ola, Boa tarde!";
             emoji = "😊";
         } else {
-            mensagem = "Boa noite";
+            mensagem = "Ola, Boa noite!";
             emoji = "🌙";
         }
 
@@ -91,5 +77,22 @@
 
     // Executa a função ao carregar a página
     obterSaudacao();
+
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
 </script>
 
