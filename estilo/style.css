@@ -119,6 +119,30 @@ body{
     color: #1f2633;
 }
 
+/* flex 2 */
+
+.flexDois{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1490px;
+    margin: 0 auto;
+}
+
+.flexDois > div{
+    flex: 1 1 200px;
+    margin: 10px;
+    background: #F2F2F2;
+    color: black;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.flexDois img{
+    width: 50px;
+}
+
 /* Estilo autoplay */ 
 
 .swiper {
